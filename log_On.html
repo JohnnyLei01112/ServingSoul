@@ -1,0 +1,56 @@
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ServingSouls | PB&Js for the Hungry</title>
+
+<link rel="shortcut icon" type="image/png" href="images/pb&jz.png">
+
+<link rel="stylesheet" href="stylez.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+<!----- Navigation ----->
+            <a href="home1.html"><img src="images/SSLogoz.png"></a>
+            <div class="navlink" id="navL">  
+                <i class="close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="join.html">JOIN</a></li>
+					<li><a href="log_On.html">LOG ON</a></li>
+                    <li><a href="resource.html">RESOURCES</a></li>
+                    <li><a href="aboutus.html">ABOUT</a></li>
+                    <li><a href="contactz.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="bars" onclick="showMenu()"></i>
+        <!----Head---->
+        </nav>   
+            <h1>Account Logon</h1>
+    </section>
+        <div class="comment-box">
+            <form class="comment-form" action="signIn.php" method="post">
+                    <input type="text" placeholder="Username" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{3,20}$" required name="User_Name">
+                    <input type="password" placeholder="Password" required name="Password">
+					<br>
+					<input class="buttonHolder" type="submit" value="Sign-In"> 
+            </form>
+			</div>
+			</div>  
+             
+		 
+<!-------- footer ---------->
+
+   
+</section>
+</body>
+<section class="footer">
+    <p>ServingSouls is a registered 501(c)(4).<br>All Rights Reserved, 2021.</p>
+</section> 
+</html>
+    

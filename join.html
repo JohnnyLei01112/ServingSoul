@@ -1,0 +1,62 @@
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ServingSouls | PB&Js for the Hungry</title>
+
+<link rel="shortcut icon" type="image/png" href="images/pb&jz.png">
+
+<link rel="stylesheet" href="stylez.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+<!----- Navigation ----->
+            <a href="home1.html"><img src="images/SSLogoz.png"></a>
+            <div class="navlink" id="navL">  
+                <i class="close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="join.html">JOIN</a></li>
+					<li><a href="log_On.html">LOG ON</a></li>
+                    <li><a href="resource.html">RESOURCES</a></li>
+                    <li><a href="aboutus.html">ABOUT</a></li>
+                    <li><a href="contactz.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="bars" onclick="showMenu()"></i>
+        <!----Head---->
+        </nav>   
+            <h1>Join Our Network!</h1>
+    </section>
+        <div class="comment-box">
+            <h3>Register your person-in-need below.</h3>
+            <form class="comment-form" action="connect.php" method="post">
+                    <input type="text" placeholder="Username (Alphanumeric only)" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{3,20}$" required name="User_Name">
+					<input type="password" placeholder="Password (needs to be least 6 characters long)" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{3,25}$" required name="Password">
+                    <input type="text" placeholder="First Name" required name="First_Name">
+                    <input type="text" placeholder="Last Name" required name="Last_Name">
+                    <input type="text" placeholder="Available Location" required name="Location">
+                    <input type="text" placeholder="Food Preference (PB&J, Turkey & Cheese, Homemade)" required name="Food">
+                    <input type="text" placeholder="Allergies" required name="Allergies">
+                    <textarea rows="5" placeholder="Your Message Here. (Optional)" name="Text"></textarea>
+					<br>
+					<input class="buttonHolder" type="submit"> 
+            </form>
+			</div>
+			</div>  
+             
+		 
+<!-------- footer ---------->
+
+   
+</section>
+</body>
+<section class="footer">
+    <p>ServingSouls is a registered 501(c)(4).<br>All Rights Reserved, 2021.</p>
+</section> 
+</html>

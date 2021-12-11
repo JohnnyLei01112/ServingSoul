@@ -1,0 +1,505 @@
+/*----Main Stylesheet-----*/
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*--------- Header --------*/
+.header{
+    background-image: linear-gradient(rgb(255, 255, 255),rgba(155, 150, 150, 0.7)),url(images/pokebackground.jpeg);
+    background-size: bottom;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+    width: 100%;
+}
+
+/*------------- Nav -----------*/
+nav{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 5%;
+}
+
+.navlink ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.navlink ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navlink ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(153, 0, 255);
+    display: block;
+    transition: .5s;
+    margin: auto;
+}
+
+.navlink ul li:hover::after{
+    width: 100%;
+}
+
+nav img{
+    width: 135px;
+}
+
+.navlink{
+    flex: 1;
+    text-align: right;
+}
+
+nav .fa{
+    display: none;
+}
+
+/*----------- Mainhead ----------*/
+.mainhead{
+    color: rgb(0, 0, 0);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%;
+    position: absolute;
+    top: 50%;
+}
+
+.mainhead h1{
+    font-size: 65px;
+}
+
+.mainhead p{
+    color: rgb(0, 0, 0);
+    margin: 20px 0 40px;
+    font-size: 20px;
+}
+
+.resc iframe{
+    border-radius: 10px;
+}
+
+/*--------- Button --------*/
+.hbtn {
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    padding: 14px 34px;
+    font-size: 20px;
+    transition: 1s;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.hbtn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+}
+
+
+
+/*---------- Services -------*/
+.services{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.services-col{
+    background: #f54f4f;
+    padding: 20px 12px;
+    transition: .5s;
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+}
+
+.services-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.822);
+}
+
+h1{
+    font-size: 50px;
+    font-weight: 200px;
+}
+
+h3{
+    font-size: 26px;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+p{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 8px;
+}
+
+.row{
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-between;  
+}
+
+
+
+/*------------ Catalog -----------*/
+.catalog{
+    padding-top: 140px;
+    padding-bottom: 20px;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.catalog-col{
+    margin-top: 10px;
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.catalog-col img{
+    width: 100%;
+}
+
+.catalog p{
+    color:rgb(0, 0, 0)
+}
+
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    transition: .5s;
+}
+
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: .5s;
+}
+
+.layer:hover{
+    background: #f54f4f;
+}
+
+.layer:hover h3{
+    bottom: 28%;
+    opacity: 1;
+}
+
+
+/*----------- Subscribe -----------*/
+.subc{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.596),rgba(65, 63, 63, 0.329)),url(images/back1.jpeg);
+    background-position: center;
+    background-size: cover;
+    padding: 100px 0;
+    margin: 100px auto;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+}
+.subc h1{
+    color: #fff;
+    margin-bottom: 40px; 
+    padding: 0; 
+}
+
+.subc .hbtn{
+    color:rgb(255, 255, 255)
+}
+
+
+/*------ Footer -------*/
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer p{
+    color: black;
+    font-size: 12px;
+}
+
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgb(255, 255, 255),rgb(217, 159, 255));
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.sub-header h1{
+    margin-top: 100px;
+}
+
+
+/*------- About ----------*/
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.about-col img{
+    border-radius: 20px;
+    width: 50%;
+}
+
+.about-col{
+    flex-basis: 48%;
+    padding: 10px 2px;
+}
+
+.about-col h1{
+    font-size: 30px;
+    padding-top: 0;
+}
+
+.about-col p{
+    color: black;
+    padding: 15px 0 25px;
+}
+
+/*---- About Button & Link----*/
+.hbtn.red-btn{
+    border: 1px solid #f44336;
+    background: transparent;
+    color: #f44336;
+}
+
+.hbtn.red-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    color: #fff;
+}
+
+.hbtn.red-btn::before{
+    background: #f44336;
+}
+
+.hbtn.red-btn::after{
+    background: #f44336;
+}
+
+.content-image{
+    flex-basis: 50%;
+}
+
+
+
+/*------ Game Info -------*/
+.resc{
+    width: 80%;
+    margin: auto;
+    padding: 60px 0;
+}
+
+.resc h2{
+    margin-bottom: 50px;
+    margin-left: auto;
+    font-size: 33px;
+}
+
+.r-left{
+    flex-basis: 65%;
+}
+
+.r-right{
+    flex-basis: 32%;
+}
+
+.r-left img{
+    border-radius: 20px;
+    width: 100%;
+}
+
+.r-left h2{
+    border-radius: 6px;
+    background-color: #f44336;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+.r-left p{
+    color: rgb(43, 41, 41);
+    padding: 0;
+}
+
+.r-right img{
+    position: relative;
+}
+
+/*------- Pokedex --------*/
+.nav2{
+    text-align: center;
+}
+
+.nav2 h2{
+    padding-top: 60px;
+}
+
+.nav2 ul{
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.nav2 li{
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.nav2 a{
+    text-decoration: none;
+}
+
+/*-------- News --------*/
+
+.comment-box{
+    position: center;
+    border: 1px solid #ccc;
+    margin: 50px 0;
+    padding: 20px 20px;
+}
+
+.comment-box h3{
+    color: black;
+    text-align: center;
+}
+
+.comment-form{
+    text-align: center;
+}
+
+.comment-form input, .comment-form textarea{
+    text-align: left;
+    width: 50%;
+    padding: 10px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background: #f0f0f0;
+}
+
+.comment-form button{
+    text-align: center;
+}
+
+.contact-us p{
+    font-size: 24px;
+    color: black;
+    margin-bottom: 10px;
+}
+.contact-us h2{
+    margin-top: 60px;
+}
+
+.miss h2{
+    margin-top: 100px;
+    font-size: 30px;
+}
+.miss p{
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    font-style: italic;
+    padding-top: 40px;
+}
+
+.started h2{
+    margin-top: 80px;
+    font-size: 30px;
+}
+
+.started p{
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    padding-top: 40px;
+    width: 62%;
+    padding-left: 250px;
+}
+
+.goals h2{
+    margin-top: 80px;
+    font-size: 30px;
+}
+
+.goals p{
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    padding-top: 40px;
+    width: 62%;
+    padding-left: 250px;
+}
+
+
+.buttonHolder{
+    box-shadow: 0px 10px 14px -7px #276873;
+    background:linear-gradient(to bottom, #595eb3 5%, #834099 100%);
+    background-color:#595eb3;
+    border-radius:8px;
+    text-align: center; 
+    cursor:pointer;
+    color:MediumSeaGreen;
+    font-family:Arial;
+    font-size:20px;
+    font-weight:bold;
+    padding:13px 32px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #3d768a;
+}
+.buttonHolder:hover{
+	background:linear-gradient(to bottom, #834099 5%, #595eb3 100%);
+	background-color:#834099;
+        color:white;
+        text-align: center;
+}
+.buttonHolder:active {
+	position:relative;
+        color:white;
+	top:1px;
+        text-align: center;
+}
+
+
+
